@@ -11,3 +11,9 @@
 
 
 ## Sample of Powershell
+
+
+
+
+![pyhon jango Shell](https://user-images.githubusercontent.com/59916393/90982829-9ae0f080-e587-11ea-8a64-2a7e843d5620.JPG)
+
