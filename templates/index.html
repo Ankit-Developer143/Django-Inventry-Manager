@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: black;
+            color: white;
+            border: solid;
+            padding: 20px;
+            margin: 20px;
+            text-align: left;
+            padding-bottom: 12px;
+            font-size: 20px;
+
+
+
+        }
+
+        table,
+        th,
+        td {
+            padding-left: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th {
+            font-size: 35px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            height: 100%;
+            border-bottom: solid red;
+        }
+
+        td {
+            font-size: 25px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1 style="text-align: center;font-size: 50px;">Table</h1>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Phone Number</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            {% for item in items %}
+            <tbody>
+                <tr>
+                    <td>{{item.name}}</td>
+                    <td>{{item.description}}</td>
+                    <td>{{item.phone_number}}</td>
+                    <td>{{item.address}}</td>
+                </tr>
+            </tbody>
+            {% endfor %}
+        </table>
+
+    </div>
+</body>
+</html>
